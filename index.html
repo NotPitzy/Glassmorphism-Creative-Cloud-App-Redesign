@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js" defer></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/ed64d234be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <video src="./assets/background.mp4" class="background" autoplay loop muted></video>
+    <div class="app">
+        <div class="nav">
+            <div class="nav__left-section">
+                <div class="left-section__dot red"></div>
+                <div class="left-section__dot yellow"></div>
+                <div class="left-section__dot green"></div>
+            </div>
+            <div class="nav__right-section">
+                <ul class="right-section__links" data-nav-links>
+                    <li class="active">Apps</li>
+                    <li>Your work</li>
+                    <li>Discover</li>
+                    <li>Market</li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="sidebar" data-sidebar>
+            </div>
+            <div class="main">
+                <div class="main__header">
+                    <div>
+                        <div class="header__app">
+                            <img src="assets/apps/adobe-stock.png" />
+                            <h3>Adobe Stock</h3>
+                        </div>
+                        <p>Grab yourself 10 free images from Adobe Stock in a 30-day free trial plan and find perfect image, that will help you with your new project.</p>
+                        <button>Start free trail</button>
+                    </div>
+                    <img src="https://assets.codepen.io/3364143/glass.png">
+                </div>
+                <div class="main__installed-apps">
+                    <h3>Installed</h3>
+                    <div class="installed-apps__apps" data-installed-apps>
+                    </div>
+                </div>
+                <div class="main__apps-in-plan">
+                    <h3>Apps in your plan</h3>
+                    <div class="apps-in-plan__apps" data-apps-in-plan>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="update-app" data-update-app>
+            <div>
+                <div class="update-app__top-section">
+                    <h3>Update This App</h3>
+                    <i class="fa-regular fa-circle-xmark" data-exit-update-app></i>
+                </div>
+                <div class="update-app__bottom-section">
+                    <p>
+                        Adjust your selections for advanced options as desired before continuing.
+                        <a>Learn more</a>
+                    </p>
+                    <label>
+                        <input type="checkbox"></input>
+                        <p>Import previous settings and preferences</p>
+                    </label>
+                    <label>
+                        <input type="checkbox"></input>
+                        <p>Remove old versions</p>
+                    </label>
+                    <div class="bottom-section__buttons">
+                        <button data-cancel-update-app>Cancel</button>
+                        <button>Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mode-toggle" data-toggle-mode>
+        <i class='bx bx-moon'></i>
+    </div>
+</body>
+</html>
